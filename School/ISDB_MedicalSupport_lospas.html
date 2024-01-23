@@ -1,0 +1,86 @@
+<!-- IoTサービスデザインビジネス応用 Cグループ ドルマゲス -->
+<!-- メディサポ用コード パスワードを忘れた場合 -->
+
+<!-- バージョン管理ノート   作成日 2023/12/13 -->
+<!-- Version    Name        Fixes                           Date         -->
+<!-- Ver.1.0.0  Shimizu     新規作成                        2023/12/13   -->
+<!-- Ver.1.0.1  Shimizu     テキストのみ入力（UIは後）      2023/12/13   -->
+<!-- Ver.1.1.0  Shimizu     認証コード送信のリンク作成      2023/12/20   -->
+<!-- Ver.1.2.0  Shimizu     UIの設定(CSSの調整)             2024/01/23   -->
+
+<!-- 以下、HTMLコード -->
+<!DOCTYPE html>
+
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <title>医療診察！メディサポ</title>
+    </head>
+
+    <body>
+        <!-- 以下、CSSコード -->
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            *:focus {
+                outline: none;
+            }
+
+            header{
+                background: #ff838b;
+            }
+
+            .lost-password {
+                margin: 20px auto;
+                width: 1200px;
+            }
+            
+            .app-title {
+                text-align: center;
+                font-size: 25px;
+                color: #777;
+            }
+
+            .lost-password-form, .btn {
+                font-size: 15px;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 120px;
+                height: 60px;
+            }
+
+            .button {
+                font-size: 15px;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+
+        <!-- 以下、HTMLコード -->
+        <div class="lost-password">
+            <div class="lost-password-screen">
+                <div class="app-title">
+                    <h1>メディサポ</h1>
+                    <h2>パスワードを忘れた方</h2>
+                </div>
+
+                <div class="lost-password-form">
+                    <input type="text" class="login-field" value="" placeholder="メールアドレス" id="login-name">
+                    <label class="login-field-icon fui-user" for="emailaddress"></label>
+                </div>
+
+                <a class="btn btn-primary btn-large btn-block" href="ISDB_MedicalSupport_aut.html">認証コードの送信</a>
+            </div>
+            <button type="button" class="button" onclick="history.back()">ホーム画面へ</button>
+        </div>
+    </body>

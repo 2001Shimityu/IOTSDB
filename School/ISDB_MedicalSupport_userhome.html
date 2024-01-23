@@ -1,0 +1,113 @@
+<!-- IoTサービスデザインビジネス応用 Cグループ ドルマゲス -->
+<!-- メディサポ用コード ユーザ画面 -->
+
+<!-- バージョン管理ノート   作成日 2023/12/13 -->
+<!-- Version    Name        Fixes                           Date         -->
+<!-- Ver.1.0.0  Shimizu     新規作成                        2023/12/13   -->
+<!-- Ver.1.0.1  Shimizu     テキストのみ入力（UIは後）      2023/12/13   -->
+<!-- Ver.1.0.2  Shimizu     UI設定を考える必要あり（要次回）2023/12/13   -->
+<!-- Ver.1.1.0  Shimizu     UIの設定(CSSの調整)             2024/01/16   -->
+
+<!-- 以下、HTMLコード -->
+<!DOCTYPE html>
+
+<html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <title>医療診察！メディサポ</title>
+    </head>
+
+    <body>
+        <!-- 以下、CSSコード -->
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            *:focus {
+                outline: none;
+            }
+
+            body {
+                font-family: Arial;
+                padding: 20px;
+            }
+            
+            .home {
+                margin: 20px auto;
+                width: 1200px;
+            }
+            
+            .home-title {
+                text-align: center;
+                font-size: 25px;
+                color: #777;
+            }
+
+            .control-group {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .btn {
+                font-size: 30px;
+                margin: auto;
+                
+            }
+
+            .control-group img {
+                width: 170px;
+                height: 200px;
+            }
+
+            .control-group div {
+                margin: auto;
+                text-align: center;
+                vertical-align: bottom;
+                font-size: 20px;
+            }
+
+            .btn-log {
+                font-size: 20px;
+                margin: auto;
+            }
+
+        </style>
+
+        <!-- 以下、HTMLコード -->
+        <div class="home">
+            <div class="home-screen">
+                <div class="home-title">
+                    <h1>ユーザページ</h1>
+                    <P>ようこそ！</P>
+                    <!-- <p id="msg"></p> -->
+                </div>
+            </div>
+
+            <div class="control-group">
+                <a class="btn btn-primary btn-large btn-block" href="ISDB_MedicalSupport_con.html">
+                    <img src="talk.png">
+                    <div>相談フォーム</div>
+                </a>
+                <a class="btn btn-primary btn-large btn-block" href="ISDB_MedicalSupport_bord.html">
+                    <img src="bord.png">
+                    <div>掲示板</div>
+                </a>
+                <a class="btn btn-primary btn-large btn-block" href="ISDB_MedicalSupport_user.html">
+                    <img src="user.png">
+                    <div>ユーザ情報</div>
+                </a>
+                <a class="btn-log btn-primary btn-large btn-block" href="ISDB_MedicalSupport_logout.html">
+                    <img src="logout.png">
+                    <div>ログアウト</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 以下、Javascriptコード -->
+        <script>
+            // var login_name = 'a';
+            // msg.innerText = 'ようこそ！' + login_name + 'さん';
+        </script>
+    </body>
+</html>
